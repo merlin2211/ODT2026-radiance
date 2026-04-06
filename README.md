@@ -58,14 +58,14 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Student 1]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Student 2]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `Anish Baxi` | `Coding` | `App` | `[Write here]` |
+| `Tejas Kulkarni` | `Electronics` | `Fabrication` | `[Write here]` |
 
 ## 1.3 Project Title
-`[Enter the title of your project]`
+`Light Printer`
 
 ## 1.4 One-Line Pitch
-`[Describe your project in one sentence]`
+`A moving neopixel strip displaying an image pattern, drawn by the user, captured through exposure photography`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,7 +75,8 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+`A user draws a simple colour image on the MITapp. The line data for each column is converted into a grid for a neopixel strip. The strip is mounted on a mechanism which uses the SC8UU ball bearings, metal and threaded rods and a stepper motor to provide linear motion. The camera captures the image of the neopixel in real time through exposure photography.
+The intended experience aims to first confuse the user through the unrecognizable flashing lights of the moving neopixel, but brings sudden wonder and satisfaction once they see the final photograph.`
 
 ---
 
@@ -144,7 +145,7 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+`imagine → draw → anticipate → neopixel moves → bewilderment → camera captures movement → reacts → repeat`
 
 ## 4.2 Intended Player / Audience
 
