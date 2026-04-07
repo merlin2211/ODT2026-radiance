@@ -121,8 +121,8 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `Object` | `Living Mirror - https://www.youtube.com/watch?v=aJeB7yPpRAY` | `The unique method of using light as a medium through electronics.` |
+| `Website` | `Eric Staller - https://lightpaintingphotography.com/eric-staller/` | `The scope of exposure lighting and light painting` |
 | `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 
 ## 3.2 Original Twist
