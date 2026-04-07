@@ -58,8 +58,8 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Anish Baxi` | `Coding` | `App` | `[Write here]` |
-| `Tejas Kulkarni` | `Electronics` | `Fabrication` | `[Write here]` |
+| `Anish Baxi` | `Coding, Photographer` | `App` | `[Write here]` |
+| `Tejas Kulkarni` | `Electronics, Assembly` | `Fabrication` | `[Write here]` |
 
 ## 1.3 Project Title
 `Light Printer`
@@ -76,7 +76,7 @@ In 1–2 paragraphs, explain:
 
 **Response:**  
 `A user draws a simple colour image on the MITapp. The line data for each column is converted into a grid for a neopixel strip. The strip is mounted on a mechanism which uses the SC8UU ball bearings, metal and threaded rods and a stepper motor to provide linear motion. The camera captures the image of the neopixel in real time through exposure photography.
-The intended experience aims to first confuse the user through the unrecognizable flashing lights of the moving neopixel, but brings sudden wonder and satisfaction once they see the final photograph.`
+It provides the experience of a user seeing an image come to life in a medium they have never seen before. It hinges on anticipation and confusion of the seemingly random pattern the NeoPixel displays one after another to invest the user, and deliver a satisying payoff when thry see the complete image.`
 
 ---
 
@@ -102,7 +102,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+`The project not only invites interaction, but allows active participation of the user through drawing by engaging imagination. The central experience is the visualization of the users drawing in a unique medium. The anticipation creates buildup and excitement as the data is converted. As the NP starts moving the user is confused by the flashing pattern of the NeoPixel. Once they see the final image formed on the camera, confusion turns into satisfaction. Now that they know ho the printer works, they will be excited to try out new drawings. `
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -110,7 +110,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+`We are designing this project as if we are a small creative studio making an interactive experience for a mixed audience`
 
 ---
 
@@ -129,7 +129,7 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`The idea of light painting has always been reserved for the people with a expert knowledge of photography and creative visualization. Through this project, we want to democratise light painting by aligning it with the basic ability to draw with your fingers, making it accessible to everyone.`
 
 ---
 
@@ -151,12 +151,12 @@ Examples:
 
 | Question | Response |
 |---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| Who is this for? | `mixed audiences` |
+| Age range | `12-70` |
+| Solo or multiplayer | `solo` |
+| Expected duration of one round | `45-50 seconds` |
+| What should the player feel? | `imagination, anticipation, confusion, amazement ` |
+| Is explanation required before use? | `Yes. Basic instructions regarding what sort of drawing is best suited and how exposure photography works` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
