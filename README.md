@@ -58,14 +58,14 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Anish Baxi` | `Coding, Photographer` | `App` | `[Write here]` |
-| `Tejas Kulkarni` | `Electronics, Assembly` | `Fabrication` | `[Write here]` |
+| `Anish Baxi` | `Coding, Photography` | `App` | `[Write here]` |
+| `Tejas Kulkarni` | `Electronics, Assembly` | `Fabrication, Documentation` | `[Write here]` |
 
 ## 1.3 Project Title
 `Light Printer`
 
 ## 1.4 One-Line Pitch
-`A moving neopixel strip displaying an image pattern, drawn by the user, captured through exposure photography`
+`A moving neopixel strip displaying an image pattern, captured through exposure photography`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -123,7 +123,6 @@ List what inspired the project.
 |---|---|---|
 | `Object` | `Living Mirror - https://www.youtube.com/watch?v=aJeB7yPpRAY` | `The unique method of using light as a medium through electronics.` |
 | `Website` | `Eric Staller - https://lightpaintingphotography.com/eric-staller/` | `The scope of exposure lighting and light painting` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 
 ## 3.2 Original Twist
 What makes your project original?
