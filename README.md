@@ -58,8 +58,8 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Anish Baxi` | `Coding, Photography` | `App` | `[Write here]` |
-| `Tejas Kulkarni` | `Electronics, Assembly` | `Fabrication, Documentation` | `[Write here]` |
+| `Anish Baxi` | `Coding, Photography` | `App` | `Strong understanding of code logic, syntax and debugging, photography skills` |
+| `Tejas Kulkarni` | `Electronics, Assembly` | `Fabrication, Documentation` | `Strong skills in CAD software and laser cutting, 3D printing. Comprehensive documentation and organization skills` |
 
 ## 1.3 Project Title
 `Light Printer`
@@ -181,22 +181,18 @@ Your project will be considered complete only if these conditions are met.
 
 - [ ] `The camera captures a clear image through exposure photography.`
 - [ ] `The NP pattern displayed is a comprehensible representation of what the user expects to see.`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`The user selects from a collection of pre made patterns, which is then displayed by the NeoPixel. The core experience of anticipation, confusion and satisfaction still stays. Only the form of input from the user's side is altered.`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- `Additional drawing input, where image drawn by user on MIT App is converted into NeoPixel data.`
+- `RGB colour data instead of single colour`
 
 ---
 
@@ -205,18 +201,18 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ ] Electronics-based
-- [ ] Mechanical
+- [x] Electronics-based
+- [x] Mechanical
 - [ ] Sensor-based
 - [ ] App-connected
-- [ ] Motorized
+- [x] Motorized
 - [ ] Sound-based
-- [ ] Light-based
+- [x] Light-based
 - [ ] Screen/UI-based
-- [ ] Fabricated structure
+- [x] Fabricated structure
 - [ ] Game logic based
 - [ ] Installation / tabletop experience
-- [ ] Other: `[Write here]`
+- [x] Other: `Photography based`
 
 ## 6.2 High-Level System Description
 Explain how the system works in simple terms.
