@@ -75,7 +75,7 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`A user draws a simple colour image on the MITapp. The line data for each column is converted into a grid for a neopixel strip. The strip is mounted on a mechanism which uses the SC8UU ball bearings, metal and threaded rods and a stepper motor to provide linear motion. The camera captures the image of the neopixel in real time through exposure photography.
+`A user takes a photo in a 'photo booth'. The image pixel size is compressed and the line data for each column is converted into a grid for a neopixel strip. The strip is mounted on a mechanism which uses the SC8UU ball bearings, metal and threaded rods and a stepper motor to provide linear motion. The camera captures the image of the neopixel in real time through exposure photography.
 It provides the experience of a user seeing an image come to life in a medium they have never seen before. It hinges on anticipation and confusion of the seemingly random pattern the NeoPixel displays one after another to invest the user, and deliver a satisying payoff when thry see the complete image.`
 
 ---
@@ -102,7 +102,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`The project not only invites interaction, but allows active participation of the user through drawing by engaging imagination. The central experience is the visualization of the users drawing in a unique medium. The anticipation creates buildup and excitement as the data is converted. As the NP starts moving the user is confused by the flashing pattern of the NeoPixel. Once they see the final image formed on the camera, confusion turns into satisfaction. Now that they know ho the printer works, they will be excited to try out new drawings. `
+`The project not only invites interaction, but allows active participation. having the user click their own image, they become invested into what will happen next.  The anticipation creates buildup and excitement as the data is converted. As the NP starts moving the user is confused by the flashing pattern of the NeoPixel. Once they see the final image formed on the camera, confusion turns into satisfaction. Finally, the user recieves their light photo as a token they can keep. Now that they know how the printer works, they will be excited to click more photos and poses. `
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -128,7 +128,7 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`The idea of light painting has always been reserved for the people with a expert knowledge of photography and creative visualization. Through this project, we want to democratise light painting by aligning it with the basic ability to draw with your fingers, making it accessible to everyone.`
+`AR filters and visualiations are common for selfies. The concept of a photobooth is always associated with either digital or print mediums. Through our project, we are executing a photobooth in a medium the user has never experienced before, light. It borrows from light painting, but now, the result does not rely on the skill of the user. It is a democratized experience.`
 
 ---
 
@@ -144,7 +144,7 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`imagine → draw → anticipate → neopixel moves → bewilderment → camera captures movement → reacts → repeat`
+`pose → click → anticipate → neopixel moves → bewilderment → camera captures movement → reacts → repeat`
 
 ## 4.2 Intended Player / Audience
 
@@ -155,27 +155,23 @@ Examples:
 | Solo or multiplayer | `solo` |
 | Expected duration of one round | `45-50 seconds` |
 | What should the player feel? | `imagination, anticipation, confusion, amazement ` |
-| Is explanation required before use? | `Yes. Basic instructions regarding what sort of drawing is best suited and how exposure photography works` |
+| Is explanation required before use? | `Yes. Basic instructions regarding what pose might be best suited and how exposure photography works` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+1. **Approach:** `The player steps into a dark/dimly lit room, drawn to the flashing LED's and camera.`
+2. **Start:** `The player begins by posing for a photo in front of the camera.`
+3. **First Action:** `Press a button to click a photo when desired.`
+4. **Main Interaction:** `NA (only 1 time interaction from user side, rest is only viewing`
+5. **System Response:** `The systems task is to convert the image taken into accurae neopixel data, and execute neopixel and motor precisely, to form an accurate and recognizable image.`
+6. **Win / Lose / End Condition:** `When the camera captures the exposure photo, and it is seen by the user.`
+7. **Reset:** `Motor moves to reset NP to original position, camera resets to photography mode. A new or same user poses for a photo. `
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[Rule 4]`
-
+- `NA (It is a photobooth)`
 ---
 
 # 5. Definition of Success
@@ -183,8 +179,8 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
+- [ ] `The camera captures a clear image through exposure photography.`
+- [ ] `The NP pattern displayed is a comprehensible representation of what the user expects to see.`
 - [ ] `[Condition 3]`
 - [ ] `[Condition 4]`
 - [ ] `[Condition 5]`
