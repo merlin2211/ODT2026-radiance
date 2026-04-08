@@ -283,11 +283,11 @@ Check all that apply.
 - [ ] Belt drives
 - [ ] Linkages
 - [ ] Hinges
-- [ ] Shafts
+- [x] Shafts
 - [ ] Springs
-- [ ] Bearings
+- [x] Bearings
 - [ ] Wheels
-- [ ] Sliders
+- [x] Sliders
 - [ ] Levers
 - [ ] Not applicable
 
@@ -295,7 +295,7 @@ Check all that apply.
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`The main mechanism is a linear rail shaft used to smoothly move a neopixel plate in 1 axis. `
 
 ## 8.3 Motion Planning
 If something moves, explain:
