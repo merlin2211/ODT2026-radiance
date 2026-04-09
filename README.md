@@ -597,10 +597,10 @@ Expected outcomes:
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `Finalize concept` | `Finalize concept` | `Changes in the mechanism of the motor assembly, talks with faculty to optimise different pieces` | `complete BOM` |
+| Week 2 | `test basic NeoPixel, setting up of camera and tweaking settings` | `Neopixel worked, but led to newer insights, camera worked` | `An idea to pivot from the original idea of drawing to a photo booth stylized selfie` | `write image processing script` |
+| Week 3 | `Build linear rail assembly, camera exposure sync` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 4 | `Playtesting, refinements, full documentation, final build` | `[Write here]` | `[Write here]` | `[Write here]` |
 
 ---
 
@@ -610,16 +610,16 @@ Expected outcomes:
 
 | Risk | Type | Likelihood | Impact | Mitigation Plan | Owner |
 |---|---|---|---|---|---|
-| `[Example: Bluetooth disconnects]` | `Technical` | `Medium` | `High` | `[Fallback interaction / simplify connection flow]` | `[Name]` |
-| `[Example: Structure breaks during play]` | `Mechanical` | `Medium` | `High` | `[Reinforce joints / change material]` | `[Name]` |
-| `[Risk]` | `[Technical / Material / Time / Gameplay]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
-| `[Risk]` | `[Type]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
+| `Camera shutter speed and motor speed are not synchronized ` | `Technical` | `High` | `High` | `Calibrate motor steps-per-column against shutter speed` | `Anish` |
+| `Ambient light contamination ruins long-exposure capture` | `Environment` | `Medium` | `High` | `Use a dark booth or fabric enclosure around the user and printer during the exposure.` | `Both` |
+| `Laser cut MDF parts do not fit together correctly` | `Mechanical` | `Low` | `Medium` | `Build a test cut of one joint panel before committing to the full sheet` | `Tejas` |
+| `Components delayed in shipping` | `Time` | `Low` | `High` | `identify local suppliers as backup for critical items ` | `Tejas` |
 
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`The precise synchronization between motor travel speed and camera shutter speed is the biggest unknown. The quality of the final light-print image depends entirely on each NeoPixel column being displayed for exactly the right duration as the carriage traverses one column-width of distance. If the timing is even slightly off, columns will overlap or leave gaps, making the output image unrecognizable.`
 
 ---
 
