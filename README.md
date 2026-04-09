@@ -225,7 +225,7 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`[Write here]`
+`The user poses and presses a button to trigger a photo capture via camera. The captured image is processed on a computer: it is resized and pixelated to match the NeoPixel strip height, and the pixel brightness of each column is extracted in sequence. This column-by-column brightness data is sent to an ESP32 microcontroller over serial communication. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original image as a light painting. `
 
 ## 6.3 Input / Output Map
 
@@ -306,14 +306,14 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`The NeoPixel and its carriage moves laterally in a single axis along two smooth metal shafts, guided by SC8UU linear ball bearings. Movement is driven by a NEMA 17 stepper motor connected to a threaded lead screw, which converts rotational motion into translational displacement. Travel speed is calculated to match the camera's shutter speed, too fast produces motion blur within each column, too slow makes the exposure too long and risks ambient light contamination. `
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `[What did you validate?]` |
+| `Blender` | `[Link or screenshot]` | `[What did you validate?]` |
 | `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
 
 ## 8.5 Changes After Digital Testing
@@ -409,7 +409,7 @@ Suggested sequence:
 
 ## 11.1 Is an app part of this project?
 - [ ] Yes
-- [ ] No
+- [x] No
 
 If yes, complete this section.
 
@@ -511,32 +511,34 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+`Tasks are divided by core strength: Anish does coding and photography (laptop script, image processing, camera setup), and Tejas does electronics and fabrication (wiring, motor assembly, CAD). Both contribute equally to testing and playtesting. Decisions are made jointly during class time. If a disagreement arises, we try out both approaches quickly and choose based on result. Progress is reviewed at the start of each class session with the weekly milestone checklist, and there are regular meetups assigned for planning and strategizing. If a task is delayed, the other member provides support and the milestone log is updated honestly. Documentation is maintained continuously by both the members. Tejas handles fabrication photos and CAD files, Anish handles code notes and testing logs.`
 
 ## 13.2 Task Breakdown
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T1 | `Finalize concept and system architecture` | `Both` | `2` | `Week 2` | `None` | `Done` |
+| T2 | `Complete BOM and place component orders` | `Tejas` | `1` | `Week 3` | `T1` | `Done` |
+| T3 | `Test NeoPixel strip with ESP32 (basic colour control)` | `Anish` | `2` | `Week 3` | `T1` | `Done` |
+| T4 | `Test stepper motor + driver (basic movement)` | `Both` | `4` | `Week 3` | `T1` | `To Do` |
+| T5 | `MicroPython image capture + column extraction script` | `Anish` | `4` | `Week 3` | `T1, T3` | `To Do` |
+| T6 | `CAD design + base plate` | `Tejas` | `3` | `Week 4` | `T2` | `To Do` |
+| T7 | `Assemble linear shaft` | `Both` | `5` | `Week 4` | `T6` | `To Do` |
+| T8 | `Camera long-exposure setup and testing` | `Both` | `2` | `Week 4` | `T1-6` | `To Do` |
+| T9 | `[Final documentation, photos]` | `Tejas` | `5` | `Week 4` | `T1-7` | `To Do` |
 
 ## 13.3 Responsibility Split
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Concept and gameplay | `Both` | `N/A` |
+| Electronics | `Tejas` | `Anish` |
+| Coding | `Anish` | `Tejas` |
+| App | `N/A` | `N/A` |
+| Mechanical build | `Tejas` | `Anish` |
+| Photography | `Anish` | `Tejas` |
+| Testing | `Both` | `N/A` |
+| Documentation | `Tejas` | `Anish` |
 
 ---
 
@@ -546,13 +548,13 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [ ] Idea finalized
-- [ ] Core interaction decided
-- [ ] Sketches made
+- [x] Idea finalized
+- [x] Core interaction decided
+- [x] Sketches made
 - [ ] BOM completed
-- [ ] Purchase needs identified
+- [x] Purchase needs identified
 - [ ] Key uncertainty identified
-- [ ] Basic feasibility tested
+- [x] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
