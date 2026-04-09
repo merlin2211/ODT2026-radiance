@@ -225,7 +225,7 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`The user poses and presses a button to trigger a photo capture via camera. The captured image is processed on a computer: it is resized and pixelated to match the NeoPixel strip height, and the pixel brightness of each column is extracted in sequence. This column-by-column brightness data is sent to an ESP32 microcontroller over serial communication. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original image as a light painting. `
+`The user poses and presses a button to trigger a photo capture via camera. The captured image is processed on a computer: it is resized and pixelated to match the NeoPixel strip height, and the pixel brightness of each column is extracted in sequence. This column-by-column brightness data is sent to an ESP32 microcontroller over serial communication. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original image as a light painting. As the strip reaches the end, a limit switch is activated, which is programed to move the stepper in the opposite direction, resetting the NeoPixel plate to it's original position. `
 
 ## 6.3 Input / Output Map
 
@@ -331,7 +331,9 @@ What changed after the CAD, animation, or simulation stage?
 |---|---:|---|
 | `ESP32` | `1` | `[Main controller]` |
 | `Neo-Pixel strip (8 bit RGB)` | `3` | `Creating a column of 24 LEDs which will display image pattern` |
-| `Nema Stepper Motor` | `1` | `Driving the main motion at a high RPM` |
+| `Nema17 Stepper Motor` | `1` | `Driving the main motion at a high RPM` |
+| `LM2596` | `1` | `Step down buck converter to adjust voltage given to the stepper motor.` |
+| `L298N motor driver module` | `1` | `To drive stepper motor` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
@@ -455,9 +457,17 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| `ESP32` | `1` | `Yes` | `No` | `0` | `NA` | `Microcontroller taught in class` |
+| `NeoPixel Strip` | `3` | `No` | `No` | `NA` | `8 bit RGB` | `LED's are moe closely packed together` |
+| `Metal rod` | `2` | `No` | `Yes` | `364` | `8mm diamter, 400mm length` | `Form axis along which NP plate will move` |
+| `Linear Ball Bearing Slide` | `2` | `No` | `Yes` | `428` | `SC8UU` | `Allows for smooth linear motion along metal rod` |
+| `Linear Ball Bearing support` | `4` | `No` | `Yes` | `452` | `SK8` | `To hold the rods stably` |
+| `Nema17 Stepper Motor` | `1` | `No` | `Yes` | `711` | `JK42HS40-1204AF-02 NEMA17 4.2 kg-cm` | `It provides a higher RPM required to rapidly rotate threaded rod` |
+| `Threaded rod` | `1` | `No` | `Yes` | `150-250` | `200mm length, 1mm pitch` | `Attached to stepper motor to attach brass nut on` |
+| `Brass nut` | `1` | `No` | `Yes` | `20-70` | `Threaded brass nut` | `Component attached to NP plate to turn rotational motion into translational` |
+| `Limit switch` | `2` | `Yes` | `No` | `NA` | `NA` | `When activated, acts as input to control stepper` |
+| `MDF base plate` | `2` | `No` | `No` | `NA` | `laser cut` | `@ base plates, bigger one as base for entire build, smaller one mounted on SC8UUs which NeoPixel is kept on` |
+
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -469,7 +479,11 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Write here]`
+`1. Usng laser cut MDF as base plate, allows us to engrave precise placements of all components to eliminate human error.
+ 2. SC8UU + SK8 + 8mm rod over plain holes: Ball bearings eliminate friction and slop, ensuring smooth, consistent carriage travel.
+ 3. NEMA 17 stepper over DC/servo: 1024 steps allow precise control and smoothness. Provides higher RPM than stepper in kit
+ 4. Threaded rod + brass nut over belt drive: 1mm pitch leadscrew provides fine, slip-free linear resolution directly tied to step count.
+ 6. NeoPixel strip over discrete LEDs: LEDs are more closely packed together, so they offer higher resolution`
 
 ## 12.3 Items to Purchase Separately
 
