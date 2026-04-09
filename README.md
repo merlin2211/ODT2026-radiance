@@ -313,14 +313,13 @@ If your project includes mechanical motion, document the digital planning before
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `Blender` | `[Link or screenshot]` | `[What did you validate?]` |
-| `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
+| `Blender` | `https://github.com/user-attachments/assets/b0ee055b-2c31-4960-9bc7-3b223918dd7a` | `The exact placement of mechanical components. How exactly rotational motion of the stepper is converted into translational.` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`We realized we had no concrete plan on how to mount the threaded rod. After research, we found out we will need a bracket to attach the stepper to the base plate along with a KP08 rotational ball bearing to freely rotate the threaded rod while keeping it stable.`
 
 ---
 
@@ -330,9 +329,9 @@ What changed after the CAD, animation, or simulation stage?
 
 | Component | Quantity | Purpose |
 |---|---:|---|
-| `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `ESP32` | `1` | `[Main controller]` |
+| `Neo-Pixel strip (8 bit RGB)` | `3` | `Creating a column of 24 LEDs which will display image pattern` |
+| `Nema Stepper Motor` | `1` | `Driving the main motion at a high RPM` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
