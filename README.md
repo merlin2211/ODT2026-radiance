@@ -75,8 +75,7 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`A user takes a photo in a 'photo booth'. The image pixel size is compressed and the line data for each column is converted into a grid for a neopixel strip. The strip is mounted on a mechanism which uses the SC8UU ball bearings, metal and threaded rods and a stepper motor to provide linear motion. The camera captures the image of the neopixel in real time through exposure photography.
-It provides the experience of a user seeing an image come to life in a medium they have never seen before. It hinges on anticipation and confusion of the seemingly random pattern the NeoPixel displays one after another to invest the user, and deliver a satisying payoff when thry see the complete image.`
+`A user draws a simple colour image on the MITapp. The line data for each column is converted into a grid for a neopixel strip. The strip is mounted on a mechanism which uses the SC8UU ball bearings, metal and threaded rods and a stepper motor to provide linear motion. The camera captures the image of the neopixel in real time through exposure photography. It provides the experience of a user seeing an image come to life in a medium they have never seen before. It hinges on anticipation and confusion of the seemingly random pattern the NeoPixel displays one after another to invest the user, and deliver a satisying payoff when they see the complete image.`
 
 ---
 
@@ -102,7 +101,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`The project not only invites interaction, but allows active participation. having the user click their own image, they become invested into what will happen next.  The anticipation creates buildup and excitement as the data is converted. As the NP starts moving the user is confused by the flashing pattern of the NeoPixel. Once they see the final image formed on the camera, confusion turns into satisfaction. Finally, the user recieves their light photo as a token they can keep. Now that they know how the printer works, they will be excited to click more photos and poses. `
+`The project not only invites interaction, but allows active participation of the user through drawing by engaging imagination. The central experience is the visualization of the users drawing in a unique medium. The anticipation creates buildup and excitement as the data is converted. As the NP starts moving the user is confused by the flashing pattern of the NeoPixel. Once they see the final image formed on the camera, confusion turns into satisfaction. Now that they know ho the printer works, they will be excited to try out new drawings. `
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -128,7 +127,7 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`AR filters and visualiations are common for selfies. The concept of a photobooth is always associated with either digital or print mediums. Through our project, we are executing a photobooth in a medium the user has never experienced before, light. It borrows from light painting, but now, the result does not rely on the skill of the user. It is a democratized experience.`
+`The idea of light painting has always been reserved for the people with a expert knowledge of photography and creative visualization. Through this project, we want to democratise light painting by aligning it with the basic ability to draw with your fingers, making it accessible to everyone.`
 
 ---
 
@@ -144,7 +143,7 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`pose → click → anticipate → neopixel moves → bewilderment → camera captures movement → reacts → repeat`
+`imagine → draw → anticipate → neopixel moves → bewilderment → camera captures movement → reacts → repeat`
 
 ## 4.2 Intended Player / Audience
 
@@ -155,23 +154,23 @@ Examples:
 | Solo or multiplayer | `solo` |
 | Expected duration of one round | `45-50 seconds` |
 | What should the player feel? | `imagination, anticipation, confusion, amazement ` |
-| Is explanation required before use? | `Yes. Basic instructions regarding what pose might be best suited and how exposure photography works` |
+| Is explanation required before use? | `Yes. Basic instructions regarding what sort of drawing might be best suited and how exposure photography works` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `The player steps into a dark/dimly lit room, drawn to the flashing LED's and camera.`
-2. **Start:** `The player begins by posing for a photo in front of the camera.`
-3. **First Action:** `Press a button to click a photo when desired.`
-4. **Main Interaction:** `NA (only 1 time interaction from user side, rest is only viewing`
-5. **System Response:** `The systems task is to convert the image taken into accurae neopixel data, and execute neopixel and motor precisely, to form an accurate and recognizable image.`
+1. **Approach:** `The player steps into a dark/dimly lit room`
+2. **Start:** `The player is intrigued by the setup of the LEDs, camera and drawing screen.`
+3. **First Action:** `The player begins by looking at an empty canvas and imagining what can be drawn.`
+4. **Main Interaction:** `Player draws simple pixel art using different colours`
+5. **System Response:** `The systems task is to convert the drawing taken into accurae neopixel data, and execute neopixel and motor precisely, to form an accurate and recognizable drawing.`
 6. **Win / Lose / End Condition:** `When the camera captures the exposure photo, and it is seen by the user.`
-7. **Reset:** `Motor moves to reset NP to original position, camera resets to photography mode. A new or same user poses for a photo. `
+7. **Reset:** `Motor moves to reset NP to original position, camera resets to photography mode. A new or same userbegins another drawing on the screen. `
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `NA (It is a photobooth)`
+- `NA (It is a drawing canvas)`
 ---
 
 # 5. Definition of Success
@@ -191,7 +190,7 @@ What is the smallest version of this project that still delivers the core experi
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `Additional drawing input, where image drawn by user on MIT App is converted into NeoPixel data.`
+- `Custom casing to keep phone in`
 - `RGB colour data instead of single colour`
 
 ---
@@ -204,11 +203,11 @@ Check all that apply.
 - [x] Electronics-based
 - [x] Mechanical
 - [ ] Sensor-based
-- [ ] App-connected
+- [x] App-connected
 - [x] Motorized
 - [ ] Sound-based
 - [x] Light-based
-- [ ] Screen/UI-based
+- [x] Screen/UI-based
 - [x] Fabricated structure
 - [ ] Game logic based
 - [ ] Installation / tabletop experience
@@ -225,16 +224,18 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`The user poses and presses a button to trigger a photo capture via camera. The captured image is processed on a computer: it is resized and pixelated to match the NeoPixel strip height, and the pixel brightness of each column is extracted in sequence. This column-by-column brightness data is sent to an ESP32 microcontroller over serial communication. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original image as a light painting. As the strip reaches the end, a limit switch is activated, which is programed to move the stepper in the opposite direction, resetting the NeoPixel plate to it's original position. `
+`The user draws an image on MIT App inventor where the screen is made up of a grid of buttons in the same proportion as the NP strip. Various control buttons allow them to erase, change colour, etc. the RGB value for each button is sent to the ESP 32 as an array. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail using metal rods, linear ball bearings and holders. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original drawing as a light painting. As the strip reaches the end, a limit switch is activated, which is programed to move the stepper in the opposite direction, resetting the NeoPixel plate to it's original position. `
 
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `App` | Input | `Allows user to draw pixel art, sends to ESP32` |
+| `ESP32` | Processing | `Takes RGB array and turns into NeoPixel instructions, controls motor` |
+| `Stepper Motor` | Output | `Drives rotational motion` |
+| `NeoPixel strip` | Output | `Shows drawing pattern for each column` |
+| `Limit Switch` | Input | `Controls when the stepper is to be stopped and reset` |
+| `Linear Shaft Rail` | Physical Action | `Allows smooth, precise lateral motion` |
 
 ---
 
@@ -295,7 +296,7 @@ Check all that apply.
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`The main mechanism is a linear rail shaft used to smoothly move a neopixel plate in 1 axis. `
+`The main mechanism is a linear rail shaft used to smoothly move a neopixel plate in 1 axis. It is made up of 2 metal rods of lengh 400 mm mounted on 2 SK8 linear rail shaft supports each. 2 SC8UU linear ball bearings are mounted on each shaft, which allow for frictionless movement. A MDF plate sits on top of the SC8UUs on which the NeoPixel strip is placed. The plate is attached to a threaded rod using a bolt. The threaded is connected to a NEMA stepper motor on one side, and a rotational ball bearing on the other. The ball bearing and the motor are held upright using laser cut brackets.`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -306,7 +307,7 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`The NeoPixel and its carriage moves laterally in a single axis along two smooth metal shafts, guided by SC8UU linear ball bearings. Movement is driven by a NEMA 17 stepper motor connected to a threaded lead screw, which converts rotational motion into translational displacement. Travel speed is calculated to match the camera's shutter speed, too fast produces motion blur within each column, too slow makes the exposure too long and risks ambient light contamination. `
+`Movement is driven by a NEMA 17 stepper attached to thethreaded rod. The bolt attached to the plate converts rotational motion into translational displacement. As the bolt moves, the NP plate moves as well, guided by the linear shaft rail. It moves laterally till it reaches the end of the shaft. Travel speed is calculated to match the camera's shutter speed, too fast produces motion blur within each column, too slow makes the exposure too long and risks ambient light contamination. `
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
@@ -319,7 +320,7 @@ If your project includes mechanical motion, document the digital planning before
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`We realized we had no concrete plan on how to mount the threaded rod. After research, we found out we will need a bracket to attach the stepper to the base plate along with a KP08 rotational ball bearing to freely rotate the threaded rod while keeping it stable.`
+`We realized we had no concrete plan on how to mount the threaded rod. After research, we found out we will need a bracket to attach the stepper to the base plate along with a radial ball bearing to freely rotate the threaded rod while keeping it stable.`
 
 ---
 
@@ -329,11 +330,12 @@ What changed after the CAD, animation, or simulation stage?
 
 | Component | Quantity | Purpose |
 |---|---:|---|
-| `ESP32` | `1` | `[Main controller]` |
+| `ESP32` | `1` | `Main controller` |
 | `Neo-Pixel strip (8 bit RGB)` | `3` | `Creating a column of 24 LEDs which will display image pattern` |
 | `Nema17 Stepper Motor` | `1` | `Driving the main motion at a high RPM` |
 | `LM2596` | `1` | `Step down buck converter to adjust voltage given to the stepper motor.` |
-| `L298N motor driver module` | `1` | `To drive stepper motor` |
+| `L298Ndual H-bridge` | `1` | `To drive stepper motor` |
+| `Limit Switch` | `2` | `To stop the motor as soon as the NP plate reaches the end of the rod and reset it back to original position.` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
@@ -409,8 +411,8 @@ Suggested sequence:
 # 11. MIT App Inventor Plan
 
 ## 11.1 Is an app part of this project?
-- [ ] Yes
-- [x] No
+- [x] Yes
+- [ ] No
 
 If yes, complete this section.
 
@@ -464,9 +466,13 @@ Insert a sketch or screenshot of the app interface.
 | `Linear Ball Bearing support` | `4` | `No` | `Yes` | `452` | `SK8` | `To hold the rods stably` |
 | `Nema17 Stepper Motor` | `1` | `No` | `Yes` | `711` | `JK42HS40-1204AF-02 NEMA17 4.2 kg-cm` | `It provides a higher RPM required to rapidly rotate threaded rod` |
 | `Threaded rod` | `1` | `No` | `Yes` | `150-250` | `200mm length, 1mm pitch` | `Attached to stepper motor to attach brass nut on` |
+| `Radial ball bearing` | `1` | `No` | `No` | `NA` | `625ZZ` | `To allow free rotation of threaded rod driven by sepper motor` |
 | `Brass nut` | `1` | `No` | `Yes` | `20-70` | `Threaded brass nut` | `Component attached to NP plate to turn rotational motion into translational` |
 | `Limit switch` | `2` | `Yes` | `No` | `NA` | `NA` | `When activated, acts as input to control stepper` |
-| `MDF base plate` | `2` | `No` | `No` | `NA` | `laser cut` | `@ base plates, bigger one as base for entire build, smaller one mounted on SC8UUs which NeoPixel is kept on` |
+| `MDF base plate` | `2` | `No` | `No` | `NA` | `laser cut` | `2 base plates, bigger one as base for entire build, smaller one mounted on SC8UUs which NeoPixel is kept on` |
+| `Phone stand` | `1` | `No` | `No` | `NA` | `laser cut` | `To keep the phone upright as the user draws on it.` |
+| `Stepper motor bracket` | `1` | `No` | `No` | `NA` | `laser cut` | `To hold the stepper in place at perpendicular angle.` |
+| `Ball bearing holder` | `1` | `No` | `No` | `NA` | `laser cut` | `To stably hold radial ball bearing at perpendicular angle` |
 
 
 ## 12.2 Material Justification
