@@ -428,7 +428,7 @@ Examples:
 - displaying data.
 
 **Response:**  
-`[Write here]`
+`The app is the main input took for the user. It is a canvas which allows the user to draw pixel art using their finger.`
 
 ## 11.3 App Features
 
@@ -489,7 +489,7 @@ Examples:
  2. SC8UU + SK8 + 8mm rod over plain holes: Ball bearings eliminate friction and slop, ensuring smooth, consistent carriage travel.
  3. NEMA 17 stepper over DC/servo: 1024 steps allow precise control and smoothness. Provides higher RPM than stepper in kit
  4. Threaded rod + brass nut over belt drive: 1mm pitch leadscrew provides fine, slip-free linear resolution directly tied to step count.
- 6. NeoPixel strip over discrete LEDs: LEDs are more closely packed together, so they offer higher resolution`
+ 6. 8-bit RGB over NeoPixel strip: LEDs are more closely packed together, so they offer higher resolution`
 
 ## 12.3 Items to Purchase Separately
 
@@ -538,7 +538,7 @@ Include:
 |---|---|---|---:|---|---|---|
 | T1 | `Finalize concept and system architecture` | `Both` | `2` | `Week 2` | `None` | `Done` |
 | T2 | `Complete BOM and place component orders` | `Tejas` | `1` | `Week 3` | `T1` | `Done` |
-| T3 | `Test NeoPixel strip with ESP32 (basic colour control)` | `Anish` | `2` | `Week 3` | `T1` | `Done` |
+| T3 | `Test NeoPixel strip with ESP32 (basic colour control)` | `Anish` | `2` | `Week 3` | `None` | `Done` |
 | T4 | `Test stepper motor + driver (basic movement)` | `Both` | `4` | `Week 3` | `T1` | `To Do` |
 | T5 | `MicroPython image capture + column extraction script` | `Anish` | `4` | `Week 3` | `T1, T3` | `To Do` |
 | T6 | `CAD design + base plate` | `Tejas` | `3` | `Week 4` | `T2` | `To Do` |
@@ -578,8 +578,8 @@ Expected outcomes:
 ### Week 2 — Build Subsystems
 Expected outcomes:
 - [ ] Electronics tests completed
-- [ ] CAD / structure planning completed
-- [ ] App UI started if needed
+- [x] CAD / structure planning completed
+- [x] App UI started if needed
 - [ ] Mechanical concept tested
 - [ ] Main subsystems partially working
 
