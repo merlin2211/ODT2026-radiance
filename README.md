@@ -314,7 +314,7 @@ If your project includes mechanical motion, document the digital planning before
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `Blender` | `https://github.com/user-attachments/assets/b0ee055b-2c31-4960-9bc7-3b223918dd7a` | `The exact placement of mechanical components. How exactly rotational motion of the stepper is converted into translational.` |
+| `Blender` | `` | `The exact placement of mechanical components. How exactly rotational motion of the stepper is converted into translational.` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
