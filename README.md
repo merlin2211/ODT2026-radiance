@@ -316,6 +316,7 @@ If your project includes mechanical motion, document the digital planning before
 |---|---|---|
 | `Blender` | https://github.com/user-attachments/assets/33fdeb04-4cba-499a-84b8-949dbbae3568 | `The exact placement of mechanical components. How exactly rotational motion of the stepper is converted into translational.` |
 
+<img src="cad/linear-rail-shaft-cad-simulation-screenshot.png" width="800"> 
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
