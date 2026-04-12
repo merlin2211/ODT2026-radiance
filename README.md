@@ -245,7 +245,7 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-<img src="light-printer-build-sketch-exploded-view.jpeg" alt="Build sketch" width="400">
+<img src="images/light-printer-build-sketch-exploded-view.jpeg" width="400">
 
 Example:
 ```md
