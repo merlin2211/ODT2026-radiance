@@ -475,6 +475,7 @@ Insert a sketch or screenshot of the app interface.
 | `Phone stand` | `1` | `No` | `No` | `NA` | `laser cut` | `To keep the phone upright as the user draws on it.` |
 | `Stepper motor bracket` | `1` | `No` | `No` | `NA` | `laser cut` | `To hold the stepper in place at perpendicular angle.` |
 | `Ball bearing holder` | `1` | `No` | `No` | `NA` | `laser cut` | `To stably hold radial ball bearing at perpendicular angle` |
+| `Screws` | `20` | `No` | `Yes` | `100` | `4.5mm` | `Miscellaneuos + mounting Sk8s to base plate` |
 
 
 ## 12.2 Material Justification
@@ -497,25 +498,30 @@ Examples:
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `Metal rod` | `Form axis along which NP plate will move` | `Buying in Ulhasnagar` | `14th April` | `Received` |
+| `Linear Ball Bearing Slide` | `Allows for smooth linear motion along metal rod` | `(https://robu.in/product/sc8uu-8-mm-linear-ball-bearing-slide-unit-cnc-3d-printer/)` | `10th April` | `Received` |
+| `Linear Ball Bearing support` | `To hold the rods stably` | `https://robu.in/product/sk8-8mm-linear-bearing-rail-support-xyz-shaft-table-cnc-router-sh8a-2pcs/` | `10th April` | `Received` |
+| `Nema17 Stepper Motor` | `Provides high RPM/torque required to rotate threaded rod` | `https://robu.in/product/nema17-40mm-1-2a-unipolar-stepper-motor-w-1m-cable/` | `10th April` | `Received` |
+| `Threaded rod` | `Attached to stepper motor to move the brass nut` | `Buying in Ulhasnagar` | `14th April` | `Received` |
+| `Brass nut` | `Turns rotational motion into translational for NP plate` | `Buying in Ulhasnagar` | `14th April` | `Received` |
+| `Screws` | `Miscellaneuos + mounting Sk8s to base plate` | `Buying in Ulhasnagar` | `17th April` | `Received` |
 
 ## 12.4 Budget Summary
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `[Cost]` |
-| Mechanical parts | `[Cost]` |
-| Fabrication materials | `[Cost]` |
-| Purchased extras | `[Cost]` |
-| Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| Electronics | `823` |
+| Mechanical parts | `476` |
+| Fabrication materials | `) (sourced from Makerspace)` |
+| Purchased extras | `130` |
+| Contingency | `NA` |
+| **Total** | `1420` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
-`[Write here]`
+`Although this cost is high, it is naccesity for the precision e require. Additionally, all the parts, especially the NEMA motor, will be very useful when they will be reused after this project is over. A lot of the parts are also shared with ohers like radial ball bearing and MDF for build fabcrication. `
 
 ---
 
@@ -572,23 +578,23 @@ Expected outcomes:
 - [x] Idea finalized
 - [x] Core interaction decided
 - [x] Sketches made
-- [ ] BOM completed
+- [x] BOM completed
 - [x] Purchase needs identified
-- [ ] Key uncertainty identified
+- [x] Key uncertainty identified
 - [x] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [ ] Electronics tests completed
+- [x] Electronics tests completed
 - [x] CAD / structure planning completed
 - [x] App UI started if needed
-- [ ] Mechanical concept tested
-- [ ] Main subsystems partially working
+- [x] Mechanical concept tested
+- [x] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [ ] Physical body built
-- [ ] Electronics integrated
+- [x] Physical body built
+- [x] Electronics integrated
 - [ ] Code connected to hardware
 - [ ] App connected if required
 - [ ] First playable version exists
