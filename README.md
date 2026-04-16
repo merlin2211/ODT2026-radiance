@@ -343,7 +343,7 @@ What changed after the CAD, animation, or simulation stage?
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`The NEMA 17 Stepper motor needs 12V voltage. It is powered using the H-bridge. The black, green, red and blue of the stepper are connected to OUT1, OUT2, OUT3, OUT4 of the H-bridge respectively. The 12V anf GND of H-bridge recieve power from power adapter. Then IN1-4 of the H-bridge go to the ESP GPIO pins to recieve input. A LM2596 Step down buck converter will be required to power the Neopixel strip. The 12V and ground from wall adapter got to VIN+ and VIN-. The LM2596 is tuned to output 5v from 12V. the VOUT+ and VOUT- go to the breadboard with common ground where ESP and Neopixel strip connects. Additionally, the limit switch ON and C go to ESP GPIO and common ground respectively. The Neopixel strip is made of 3 smaller 8bit strips with connections to and from each other. The DI, 4-7V and GND go to the GPIO pin, and breadboard going to LM2596 respectively. `
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
