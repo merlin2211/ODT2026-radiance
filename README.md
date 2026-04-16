@@ -349,16 +349,16 @@ Describe the main electrical connections.
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[Upload image and link here]`
+<img src="images/circuit-diagram.png" width="800"> 
 
 ## 9.4 Power Plan
 
 | Question | Response |
 |---|---|
-| Power source | `[USB / battery / adapter / other]` |
-| Voltage required | `[Write here]` |
-| Current concerns | `[Write here]` |
-| Safety concerns | `[Write here]` |
+| Power source | `Wall adapter` |
+| Voltage required | `12V and 5V` |
+| Current concerns | `Acciedntal 12V and GND cross connection in H-bridge or LM2596 can short circuit whole circuit` |
+| Safety concerns | `H-bridge might overheat` |
 
 ---
 
