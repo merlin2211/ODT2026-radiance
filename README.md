@@ -170,7 +170,7 @@ Describe exactly how a player will use the project.
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `NA (It is a drawing canvas)`
+- `NA (it is an interactive experience with drawing)`
 ---
 
 # 5. Definition of Success
@@ -178,8 +178,8 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `The camera captures a clear image through exposure photography.`
-- [ ] `The NP pattern displayed is a comprehensible representation of what the user expects to see.`
+- [x] `The camera captures a clear image through exposure photography.`
+- [x] `The NP pattern displayed is a comprehensible representation of what the user expects to see.`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
@@ -267,10 +267,10 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[Write here]` |
-| Estimated weight | `[Write here]` |
+| Length | `500mm` |
+| Width | `400mm` |
+| Height | `150mm` |
+| Estimated weight | `4 kg` |
 
 ---
 
