@@ -269,7 +269,7 @@ Add a sketch with labels showing:
 |---|---|
 | Length | `500mm` |
 | Width | `400mm` |
-| Height | `150mm` |
+| Height | `130mm` |
 | Estimated weight | `4 kg` |
 
 ---
@@ -547,12 +547,15 @@ Include:
 | T1 | `Finalize concept and system architecture` | `Both` | `2` | `Week 2` | `None` | `Done` |
 | T2 | `Complete BOM and place component orders` | `Tejas` | `1` | `Week 3` | `T1` | `Done` |
 | T3 | `Test NeoPixel strip with ESP32 (basic colour control)` | `Anish` | `2` | `Week 3` | `None` | `Done` |
-| T4 | `Test stepper motor + driver (basic movement)` | `Both` | `4` | `Week 3` | `T1` | `To Do` |
-| T5 | `MicroPython image capture + column extraction script` | `Anish` | `4` | `Week 3` | `T1, T3` | `To Do` |
-| T6 | `CAD design + base plate` | `Tejas` | `3` | `Week 4` | `T2` | `To Do` |
-| T7 | `Assemble linear shaft` | `Both` | `5` | `Week 4` | `T6` | `To Do` |
-| T8 | `Camera long-exposure setup and testing` | `Both` | `2` | `Week 4` | `T1-6` | `To Do` |
-| T9 | `[Final documentation, photos]` | `Tejas` | `5` | `Week 4` | `T1-7` | `To Do` |
+| T4 | `Stepper motor code` | `Tejas` | `2` | `Week 3` | `T1, T2` | `Done` |
+| T5 | `Test stepper motor + driver (basic movement)` | `Both` | `4` | `Week 3` | `T2, T4` | `Done` |
+| T6 | `App code + column extraction code` | `Anish` | `4` | `Week 3` | `T1, T3` | `Done` |
+| T7 | `CAD design + base plate` | `Tejas` | `3` | `Week 4` | `T2` | `Done` |
+| T8 | `Assemble linear shaft` | `Both` | `5` | `Week 4` | `T2, T7` | `Done` |
+| T9 | `Camera long-exposure setup and testing` | `Both` | `2` | `Week 4` | `T1-9` | `Done` |
+| T10 | `Assemble outer casing` | `Anish` | `5` | `Week 4` | `T6-7` | `Done` |
+| T12 | `Electrical addembly` | `Tejas` | `1` | `Week 4` | `T1-10` | `Done` |
+| T13 | `Final documentation, photos` | `Tejas` | `5` | `Week 4` | `T1-12` | `To Do` |
 
 ## 13.3 Responsibility Split
 
@@ -561,7 +564,7 @@ Include:
 | Concept and gameplay | `Both` | `N/A` |
 | Electronics | `Tejas` | `Anish` |
 | Coding | `Anish` | `Tejas` |
-| App | `N/A` | `N/A` |
+| App | `Anish` | `Tejas` |
 | Mechanical build | `Tejas` | `Anish` |
 | Photography | `Anish` | `Tejas` |
 | Testing | `Both` | `N/A` |
@@ -595,7 +598,7 @@ Expected outcomes:
 Expected outcomes:
 - [x] Physical body built
 - [x] Electronics integrated
-- [ ] Code connected to hardware
+- [x] Code connected to hardware
 - [ ] App connected if required
 - [ ] First playable version exists
 
@@ -611,9 +614,9 @@ Expected outcomes:
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `Finalize concept` | `Finalize concept` | `Changes in the mechanism of the motor assembly, talks with faculty to optimise different pieces` | `complete BOM` |
-| Week 2 | `test basic NeoPixel, setting up of camera and tweaking settings` | `Neopixel worked, but led to newer insights, camera worked` | `An idea to pivot from the original idea of drawing to a photo booth stylized selfie` | `write image processing script` |
-| Week 3 | `Build linear rail assembly, camera exposure sync` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `Finalize concept` | `Concept was explored more but not finalized` | `Developments in the mechanism of the motor assembly, talks with faculty to optimise different pieces` | `complete BOM` |
+| Week 2 | `Plan and assign tasks, start neopixel testing, order materials and components` | `Concept was reiterated, mechanicaal assembly ideation began, neopixel tested` | `Back and forth between drawing idea and photo booth idea after neopixel test, eventually finalizing drawing idea` | `place components order and go out to get materials` |
+| Week 3 | `Build linear rail assembly, camera exposure sync, code app on Gdevelop, test electrical components individually` | `[Write here]` | `[Write here]` | `[Write here]` |
 | Week 4 | `Playtesting, refinements, full documentation, final build` | `[Write here]` | `[Write here]` | `[Write here]` |
 
 ---
