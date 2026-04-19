@@ -58,7 +58,7 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Anish Baxi` | `Coding, Photography` | `App` | `Strong understanding of code logic, syntax and debugging, photography skills` |
+| `Anish Baxi` | `Coding, App ` | `Photography` | `Strong understanding of code logic, syntax and debugging, photography skills` |
 | `Tejas Kulkarni` | `Electronics, Assembly` | `Fabrication, Documentation` | `Strong skills in CAD software and laser cutting, 3D printing. Comprehensive documentation and organization skills` |
 
 ## 1.3 Project Title
@@ -224,7 +224,7 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`The user draws an image on MIT App inventor where the screen is made up of a grid of buttons in the same proportion as the NP strip. Various control buttons allow them to erase, change colour, etc. the RGB value for each button is sent to the ESP 32 as an array. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail using metal rods, linear ball bearings and holders. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original drawing as a light painting. As the strip reaches the end, a limit switch is activated, which is programed to move the stepper in the opposite direction, resetting the NeoPixel plate to it's original position. `
+`The user draws an image on an HTML app where the screen is made up of a grid of buttons in the same proportion as the NP strip. Various control buttons allow them to erase, change colour, etc. the RGB value for each button is sent to the ESP 32 as an array. The ESP32 drives the NeoPixel strip, lighting each LED according to the column data, while simultaneously controlling a stepper motor that moves the strip laterally along a linear rail using metal rods, linear ball bearings and holders. A camera set to long-exposure mode captures the full sweep of the moving NeoPixel strip in a single frame, reconstructing the original drawing as a light painting. As the strip reaches the end, a limit switch is activated, which is programed to move the stepper in the opposite direction, resetting the NeoPixel plate to it's original position. `
 
 ## 6.3 Input / Output Map
 
@@ -368,7 +368,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform | Purpose |
 |---|---|
-| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
+| `[MicroPython / Arduino / SPCK editor / CAD tool / other]` | `[Purpose]` |
 | `[Tool]` | `[Purpose]` |
 
 ## 10.2 Software Logic
@@ -384,7 +384,7 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`On startup, the ESP32 initializes the LEDs, motor, switches, and creates a WiFi access point with a server. When the pixel data is received, it is distrubuted into RGB columns. The system then starts: the motor moves forward while LEDs display columns sequentially. The reverse switch stops forward motion, followed by a short pause, then the motor moves back without LEDs. The stop switch ends the cycle. Communication happens via HTTP between the phone and ESP32. After completion, the system resets by stopping the motor, clearing LEDs, and returning to the original state.`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -405,12 +405,42 @@ Suggested sequence:
 ## 10.4 Pseudocode
 
 ```text
-[Write your pseudocode here]
+START
+
+set up LEDs, motor, switches
+turn on WiFi + server
+
+LOOP forever:
+    wait for phone to send data
+
+    if data comes:
+        read and convert into columns
+
+        send OK back
+
+        start LED sequence
+
+        move forward + show LEDs
+        while reverse switch not pressed:
+            move motor forward
+            update LED columns step by step
+
+        stop motor
+        wait 2 sec
+
+        move back
+        while stop switch not pressed:
+            move motor backward
+
+        stop motor
+        turn off LEDs
+
+END LOOP
 ```
 
 ---
 
-# 11. MIT App Inventor Plan
+# 11. SPCK Editor
 
 ## 11.1 Is an app part of this project?
 - [x] Yes
@@ -436,9 +466,10 @@ Examples:
 
 | Feature | Purpose |
 |---|---|
-| `[Bluetooth connect button]` | `[Purpose]` |
-| `[Score display]` | `[Purpose]` |
-| `[Control button / slider / label]` | `[Purpose]` |
+| `Send button` | `Connect phone to ESP32 network` |
+| `Pixel canvas (24×24)` | `Draw the light pattern` |
+| `Color picker` | `Select RGB values for pixels` |
+| `Clear button` | `Reset the canvas` |
 
 ## 11.4 UI Mockup
 Insert a sketch or screenshot of the app interface.
@@ -448,10 +479,10 @@ Insert a sketch or screenshot of the app interface.
 
 ## 11.5 App Screen Flow
 
-1. `[Step 1]`
-2. `[Step 2]`
-3. `[Step 3]`
-4. `[Step 4]`
+1. `Open app and draw on pixel canvas`
+2. `Connect to ESP32 WiFi network`
+3. `Press Send to transmit data`
+4. `ESP32 runs motor + LED sequence`
 
 ---
 
