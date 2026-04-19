@@ -616,8 +616,8 @@ Expected outcomes:
 |---|---|---|---|---|
 | Week 1 | `Finalize concept` | `Concept was explored more but not finalized` | `Developments in the mechanism of the motor assembly, talks with faculty to optimise different pieces` | `complete BOM` |
 | Week 2 | `Plan and assign tasks, start neopixel testing, order materials and components` | `Concept was reiterated, mechanicaal assembly ideation began, neopixel tested` | `Back and forth between drawing idea and photo booth idea after neopixel test, eventually finalizing drawing idea` | `place components order and go out to get materials` |
-| Week 3 | `Build linear rail assembly, camera exposure sync, code app on Gdevelop, test electrical components individually` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `Playtesting, refinements, full documentation, final build` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 3 | `Create CAD model, test linear rail shaft, begin MIT App, plan electrnoics ` | `CAD model revealed our gaps in some mechanical assembly, linear rail test was successful but showed we still needed to buy miscellaneous parts (screws and nuts), app UI and backend code was completed` | `Due to MIT App inventor's limited capability, app was shifted to Gdevelop, a tool better suited for our project` | `Test Neopixel and rail shaft together, begin final assembly` |
+| Week 4 | `Write the code for motor, test motor and it's capacity, complete final build using laser cut MDF and plywood, finalize electrical wiring and fix it to base, install secondary components like switches, test all components (motor, linear shaft and neopixel) together, playtest final build, complete documentation and repo` | `Final build was completed but took longer than expected due to laser cutting, we ran into unexpected problems while testing motor but resolved them eventually, after all secndary components were installed, wiring was finalized and taped down, once linear rail shaft was working individually, complete build was playtested with exposure photos` | `Most tasks were completed according to plan with only minor changes in assembly` | `Prepare for exhibition` |
 
 ---
 
@@ -631,6 +631,8 @@ Expected outcomes:
 | `Ambient light contamination ruins long-exposure capture` | `Environment` | `Medium` | `High` | `Use a dark booth or fabric enclosure around the user and printer during the exposure.` | `Both` |
 | `Laser cut MDF parts do not fit together correctly` | `Mechanical` | `Low` | `Medium` | `Build a test cut of one joint panel before committing to the full sheet` | `Tejas` |
 | `Components delayed in shipping` | `Time` | `Low` | `High` | `identify local suppliers as backup for critical items ` | `Tejas` |
+| `NEMA motor does not work` | `Technical` | `Medium` | `High` | `purchase NEMA motor driver (A4988) instead of using H-bridge` | `Tejas` |
+| `Gedevelop code does not work / does not connect to ESP properly` | `Technical` | `Low` | `High` | `Debug, if that does not work, run app locally on Python on laptop instead of app` | `Anish` |
 
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
@@ -692,7 +694,10 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+
+`- The entire build sits within a drawer sized box. The base plate is made of 5mm laser cut MDF with measured holes to mount the SK8s using screw, nut and washers. The top lid is laser cut as well, with 3 slits - 2 for the NeoPixel plate, 1 with acrylic sheet to give a peak into what the mechanism looks like. For maximum stability, the walls are cut from plywood and then nailed to the MDF, completing the box. There are 2 holes drilled into the plywood, to allow wiring to come through. Additionally, the base plate was mounted on 3 wooden blocks, to raise it's height such that the base plate does not exert all it's weight on the screws. `
+`- Once the SK8s were mounted, the rods were inserted along with the SC8UUs. Between both metal rods, a motor was fixed to an edge using wooden blocks glued to the MDF. This holds the motor in place. Previously, the plan was to purchase KP08 radial ball bearing with stand and a coupler to attach the threaded rod to motor's D-shaft and hold up the ball baring on the other end. But due to budget and time constraints, thoe were fabricated in the labs itself. The stand for the ball bearing was laser cut and glued, while the coupler was 3d printed and glued to the threaded rod. A nut was fit into a block of red wood, and then screwed into the threaded rod. The block procided good surface area to glue the nut to the SC8UU plate, such that when the nut moves, the SC8UU plate moves. Additionally, to hold the Neopixel plate above the slit on the lid, wooden blocks were glued to the SC8UU plate. The MDF Neopixel plate was taped on the wooden block, so that it moves along with SC8UUs.`
+`- Once the shaft was assembled, the electrical components and wiring were taped down using masking tape to secure them to the base plate. Additionally, to add some visual flair, the project title 'LIGHT PRINTER' was laser cut and glued to the top of the lid and sanded.`
 
 ## 17.2 Build Photos
 Add photos throughout the project.
