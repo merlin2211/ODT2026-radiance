@@ -630,16 +630,16 @@ Expected outcomes:
 - [x] Physical body built
 - [x] Electronics integrated
 - [x] Code connected to hardware
-- [ ] App connected if required
-- [ ] First playable version exists
+- [x] App connected if required
+- [x] First playable version exists
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [ ] Technical bugs reduced
-- [ ] Playtesting completed
-- [ ] Improvements made
-- [ ] Documentation completed
-- [ ] Final build ready
+- [x] Technical bugs reduced
+- [x] Playtesting completed
+- [x] Improvements made
+- [x] Documentation completed
+- [x] Final build ready
 
 ## 14.2 Weekly Update Log
 
@@ -679,20 +679,23 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
-| `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
-| `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
-| `[App communication]` | `[Method]` | `[What counts as success?]` |
+| `WiFi connection (ESP32 AP)` | `Connect phone to LED_Controller, send test request` | `Phone connects reliably, request received every time` |
+| `App communication (HTTP)` | `Send multiple drawings (small + full grid)` | `No JSON errors, full data received consistently` |
+| `LED output (NeoPixel)` | `Run manual test patterns` | `Correct colors, smooth column transitions` |
+| `Mechanism movement (rail system)` | `Run full forward + reverse cycles` | `Smooth motion, no stalling or misalignment` |
+| `Motor driver (H-bridge)` | `Continuous stepping under load` | `No overheating, stable steppingt` |
+| `Limit switches` | `Manually trigger during motion` | `Immediate stop/reverse response` |
+| `Sync (motor + LEDs)` | `Run during camera exposure` | `Columns align with motion, no drift` |
 
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
 |---|---|
-| Do players understand what to do? | `[Method]` |
-| Is the interaction satisfying? | `[Method]` |
-| Do players want another turn? | `[Method]` |
-| Is the challenge balanced? | `[Method]` |
-| Is the response clear and immediate? | `[Method]` |
+| Do players understand what to do? | `Observe if they can draw and send without help` |
+| Is the interaction satisfying? | `Watch reactions during light painting output` |
+| Do players want another turn? | `See if they try multiple drawings` |
+| Is the challenge balanced? | `Ask if drawing-to-output feels predictable` |
+| Is the response clear and immediate? | `Check delay between send and system start` |
 
 ## 16.3 Testing and Debugging Log
 
