@@ -755,9 +755,12 @@ Example:
 
 | Version | Date | What Changed | Why |
 |---|---|---|---|
-| `v1` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v2` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v3` | `[Date]` | `[Describe]` | `[Reason]` |
+| `v1` | `18th February` | `original concept was ideated of using 2 axis motion to create wave path for LED using music` | `2 axis was unnecessary complexity, wave from music output wasn't interesting enouggh` |
+| `v2` | `7th March` | `Idea pivoted to a pixel canvas` | `based on more user inout, output is more rewarding` |
+| `v3` | `9th March` | `Idea shufts to phootbooth` | `uses complete RGB capabilities of NP` |
+| `v4` | `10th March` | `Idea changed back to drawing canvas` | `pixel resolutio too less for photobooth` |
+| `v5` | `10th March` | `App developed on Gdevelop instead of MIT app inventor` | `limited capability of MIT App` |
+| `v6` | `13th March` | `Pixel resolution changes from 32x48 to 24x24` | `slow motor speed` |
 
 ---
 
