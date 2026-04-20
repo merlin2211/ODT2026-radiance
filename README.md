@@ -701,8 +701,10 @@ What is the single biggest uncertainty in your project at this stage?
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
-| `[Date]` | `[Describe issue]` | `[Technical / Mechanical / UI / Gameplay]` | `[What you did]` | `[Worked / Partly / Failed]` | `[Next step]` |
-| `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
+| `18/04/2026` | `App sent data but esp32 showed JSON error` | `UI` | `Fixed request body formatting and ensured proper JSON structure` | `Worked` | `N/A` |
+| `16/04/2026` | `NEMA 17 kept jittering and made incomplete cycles` | `Technical` | `Tried all the possible permutation and combination of pins until we found the right order` | `Motor started completing the steps and rotating seamlessly` | `Note down the colours of the wires attached to their respective GPIO pins` |
+| `06/04/2026` | `Neopixel strip wasnt lighting up due to improper soldering` | `Mechanical` | `Re-soldered the strips with the help of the faculty` | `Worked` | `Tape down the neopixel on a double sided tape for macximum stability` |
+| `20/04/2026` | `The neopixels werent turning off properly whilst moving, creating strips of light instead of pixels` | `Technical` | `Tried to change the code to make the NEMA 17 movement and the led flshing completely independene` | `Did not work` | `We let it be and focused on improving other aspects of the image` |
 
 ## 16.4 Playtesting Notes
 
