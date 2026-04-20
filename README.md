@@ -770,23 +770,22 @@ Example:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`An interactive installation where the user can image and draw pixel art on an app, which is then transmitted to the ESP and subsequently a NeoPixel mounted on a linear rail shaft. As the Neopixel moves laterally, the pattern on the Neopixel changes, displaying the whole drawing one column at a time. This is captured by exposure photography, on which the whole pixel art can be seen in one image. `
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `The app is easy to use and intuitive.`
+- `The image created by the NeoPixel and captured by the camera is clearly recognizable the art drawn by the user.`
+- `The linear rail shaft works perfectly, creating the required movement.`
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `Due to the pitch of the threaded rod, the motion is too slow, resulting in playing time being a lot longer than ideal.`
+- `If the camera was automated and synced to the code instead of it being manual, it would not require human control.`
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`The project has been thrpugh multiple iterations, including an audio wave visualizer, a photobooth and a drawing canvas. The deciding factor for these changes has been the type of user input best suited for the projetc. The drawing canvas was finally chosen since it engages the user through imagination.`
 
 ---
 
@@ -798,7 +797,7 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
-`[Write here]`
+`Our team especially great at time management, and finished the project well before the deadline. The only things which slightly slowed us down were the arrival of the components and some difficultis with getting the unfamiliar NEMA stepper to work.  We were also good at effeciently dividing tasks, taking up parallel responsibilities at once. We effeciently used the period before the parts were dleivered to meticuously plan the build. The tasks we took up complimented each other, and we made sure we could help each other out in our own tasks. `
 
 ## 19.2 Technical Reflection
 What did you learn about:
@@ -809,7 +808,7 @@ What did you learn about:
 - integration?
 
 **Response:**  
-`[Write here]`
+`Since most of our electronic and mechanical were out of the kit, our major learning was understanding tp use components we haven't learnt in class through self learning. The lnear shaft mechanism requires precision, and so did the fabrication for it. We learnt to precisely pla measurement to mitigate errors. We began developing a sense of what fabrication technique to user wehre - relying on pre-manufactured parts where precision is key, while shifting to 3D and laser cut fabrication wjere flexibility is of the essence. Even the electronics were new to use. We figured out the complex wiring of the NEMA and how the wiring needed to be planned to account for two different voltages. For coding, we built upon the methods taught in class and added a layer of complexity. We wrote all the base code ourselves, and then used AI debug and integrate. Finally, we learnt how to finally compile all ou individual systems into a final build which comes together. `
 
 ## 19.3 Design Reflection
 What did you learn about:
@@ -821,37 +820,37 @@ What did you learn about:
 - iteration?
 
 **Response:**  
-`[Write here]`
+`We believe we followed the core brief of creating a non-functional project perfectly. The apporach was to imagine oursleves in place of the users, and assessing what experience provide the most entertaining sense of play. We started by mapping the journey of what the user is supposed to feel at each point, as we crafted a clear journey of imaination, anticipation and fascination. We learnt the importance of user input, to have them be invested with interacting with your project. Many of our decisions, like changing the resolution, or the speed were dictated by what the user would do and think.`
 
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`Upgrade our components like the coupler and a threaded rod with higher pitch, to have the neopixel plate move faster, to create a faster experience. Additionally, a higher resolution by increasing neopixels add image reognizability. Currently, human control is required to operate the camera. Given more time, we would like to explore how we could automate that process as well.`
 
 ---
 
 # 20. Final Submission Checklist
 
 Before submission, confirm that:
-- [ ] Team details are complete
-- [ ] Project description is complete
-- [ ] Inspiration sources are included
-- [ ] Player journey is written
-- [ ] Sketches are added
-- [ ] BOM is complete
-- [ ] Purchase list is complete
-- [ ] Budget summary is complete
-- [ ] Mechanical planning is documented if applicable
-- [ ] App planning is documented if applicable
-- [ ] Code flowchart is added
-- [ ] Task breakdown is complete
-- [ ] Weekly logs are updated
-- [ ] Risk register is complete
-- [ ] Testing log is updated
-- [ ] Playtesting notes are included
-- [ ] Build photos are included
-- [ ] Final reflection is written
+- [x] Team details are complete
+- [x] Project description is complete
+- [x] Inspiration sources are included
+- [x] Player journey is written
+- [x] Sketches are added
+- [x] BOM is complete
+- [x] Purchase list is complete
+- [x] Budget summary is complete
+- [x] Mechanical planning is documented if applicable
+- [x] App planning is documented if applicable
+- [x] Code flowchart is added
+- [x] Task breakdown is complete
+- [x] Weekly logs are updated
+- [x] Risk register is complete
+- [x] Testing log is updated
+- [x] Playtesting notes are included
+- [x] Build photos are included
+- [x] Final reflection is written
 
 ---
 
