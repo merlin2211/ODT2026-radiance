@@ -750,11 +750,8 @@ Suggested images:
 - final build.
 
 Example:
-```md
 
-
-
-```
+<img src="images/mockup-build.jpeg" width="400">  <img src="images/mechanism-build.jpeg" width="400">  <img src="images/cover-build.jpeg" width="400">
 
 ## 17.3 Version History
 
