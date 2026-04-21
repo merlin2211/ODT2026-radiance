@@ -475,7 +475,9 @@ Examples:
 Insert a sketch or screenshot of the app interface.
 
 **Insert image below:**  
-<img src="images/app-UI.jpeg" width="400">
+<img src="images/app-UI.jpeg" width="400">  <img src="images/app-colour-picker.jpeg" width="400">
+
+<img src="images/HSV-tool.jpeg" width="400">  <img src="images/drawn-image-on-app.jpeg" width="400">
 
 ## 11.5 App Screen Flow
 
