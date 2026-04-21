@@ -400,7 +400,7 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[Upload image and link here]`
+<img src="images/code-flowchart.png" width="400">
 
 ## 10.4 Pseudocode
 
