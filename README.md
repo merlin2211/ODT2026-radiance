@@ -712,8 +712,9 @@ What is the single biggest uncertainty in your project at this stage?
 
 | Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
 |---|---|---|---|---|
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
+| `Peer` | `Drew a right alligned pattern and sent it` | `Wasn’t sure if it actually sent` | `Seeing the pattern appear,albiet late in the motion` | `Add a “sent” confirmation on app` |
+| `friend` | `Tried different colors and shapes` | `Didn’t know how bright it would show` | `Color mixing in the light trails` | `Add brightness preview in app` |
+| `friend` | `Ran multiple drawings back to back` | `Didn’t know if previous data clears` | `The smooth motor movement` | `Auto-reset or add clear button` |
 
 ---
 
