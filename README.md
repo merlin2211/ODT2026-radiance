@@ -475,7 +475,7 @@ Examples:
 Insert a sketch or screenshot of the app interface.
 
 **Insert image below:**  
-`[Upload image and link here]`
+<img src="images/app-UI.jpeg" width="400">
 
 ## 11.5 App Screen Flow
 
