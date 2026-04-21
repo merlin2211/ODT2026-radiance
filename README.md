@@ -245,7 +245,7 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-
+<img src="images/concept-sketch-1.jpeg" width="400"> <img src="images/concept-sktech-2.jpeg" width="400">
 
 Example:
 ```md
